@@ -1,45 +1,55 @@
 import React from "react";
+import CheckMark from "./checkmark.svg";
+
 
 const PricingCard = ({ data }) => (
-  <div className="box-border flex flex-col items-start p-0 absolute w-300 h-536 border">
+  <div className="card gray">
     {data.suggest && (
       <div
-        style={{ backgroundColor: "blue", color: "white", padding: "12px" }}
-        className="flex flex-col items-start"
+
+        className="suggest"
       >
         Best Choice
       </div>
     )}
-    <img className="w-76 h-5 flex-none order-none grow-0" src={data.logo} alt={data.title} />
-    <div className="px-6 py-4">
-      <div className="font-bold text-xl mb-2">{data.title}</div>
-      <p className="text-gray-700 text-base">Price: ${data.price}</p>
-    </div>
-    <div className="px-6 py-4">
-      <ul>
+    <header className="layout">
+      <img
+        className="logo"
+        src={data.logo}
+      />
+
+      <h1 className="font-m font-Roboto">{data.title}</h1>
+      <p className="font-l font-Roboto">₺{data.price},00</p>
+    </header>
+    <main className="main font-Roboto">
+      <hr className="line" />
+      <ul className="check-items">
         {data.features.map((feature) => (
           <li
             key={feature.id}
-            className={`text-gray-700 mb-2 ${
+            className={`font-s ${
               feature.goodFeature ? "text-green-500" : "text-gray-500"
             }`}
           >
             {!feature.goodFeature && (
-              <span className="text-gray-500">&#x2717; </span>
+              <img src={CheckMark} alt="checkmark" className="mr-2 inline  " />
             )}
             {feature.goodFeature && (
-              <span className="text-green-500">&#x2713; </span>
+              <img src={CheckMark} alt="checkmark" className="mr-2 inline " />
             )}
             {feature.title}
           </li>
         ))}
       </ul>
-    </div>
-    <div className="px-6 py-4 bg-gray-200">
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-        Sign Up
-      </button>
-    </div>
+    </main>
+
+    <footer className="footer">
+      <div className="actions">
+        <button className="button">
+          <p className="plan-text font-Roboto">Planı Seç</p> 
+        </button>
+      </div>
+    </footer>
   </div>
 );
 

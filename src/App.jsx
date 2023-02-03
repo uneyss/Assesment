@@ -5,8 +5,8 @@ import data from './data';
 
 function App() {
   return (
-    <div className="flex justify-center">
-      <PricingCard data={data[0]} />
+    <div className="mt-10 ml-10">
+      <PricingCard data={data[2]} />
     </div>
   );
 }

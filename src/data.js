@@ -25,6 +25,11 @@ const data = [
         id: 4,
         title: "Ücretsiz Yedek Parça",
         goodFeature: false
+      },
+      {
+        id: 5,
+        title: "Ücretsiz Yedek Parça",
+        goodFeature: false
       }
     ]
   },
@@ -71,17 +76,22 @@ const data = [
       },
       {
         id: 2,
-        title: "Ücretsiz Bakıma",
+        title: "Ücretsiz Değişim",
         goodFeature: true
       },
       {
         id: 3,
-        title: "Ücretsiz Yedek Parça",
+        title: "Ek 3 Yıl Garanti",
         goodFeature: true
       },
       {
         id: 4,
-        title: "Ücretsiz Yedek Parça",
+        title: "1 Özellik Daha Eklenmeli",
+        goodFeature: false
+      },
+      {
+        id: 5,
+        title: "Dahil Olmayan Özellik",
         goodFeature: false
       }
     ]
