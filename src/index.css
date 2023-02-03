@@ -2,11 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-ul {
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin: 0 auto;
-  max-width: 450px;
+.test {
+  background-color: blue;
+  color: white;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.padding {
+  padding: 32px 32px 0px;
+}
+.border {
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-color: #eaecf0;
+  border-radius: 0px;
+}
+
+.font-m {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #364153;
+}
+
+.font-l {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  color: #111729;
 }

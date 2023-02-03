@@ -1,4 +1,4 @@
-export const pricingPlans = [
+const data = [
   {
     id: 1,
     title: "Koruma Paketi - 1",
@@ -87,3 +87,4 @@ export const pricingPlans = [
     ]
   }
 ];
+export default data;

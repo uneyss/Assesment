@@ -1,18 +1,14 @@
-import React from "react";
+import React from 'react';
 import "./index.css";
-import PricingCard from "./components/PricingCard/PricingCard";
+import PricingCard from './components/PricingCard/PricingCard';
+import data from './data';
 
-
-export default function App() {
+function App() {
   return (
-    <>
-      {/*<div className="App">
-      <h1 className="text-3 font-bold underline">Hello worldss!</h1>
-      <h1 className="text-3 font-bold underline">Lets Get Start!</h1>
-      </div>
-      */}
-      
-      <PricingCard />
-    </>
-  )
+    <div className="flex justify-center">
+      <PricingCard data={data[0]} />
+    </div>
+  );
 }
+
+export default App;

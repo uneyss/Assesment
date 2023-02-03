@@ -1,29 +1,46 @@
 import React from "react";
-import { pricingPlans } from "../../data";
 
-export default function PricingCard() {
-  return (
-    <div className="mx-auto max-w-7x1 px-4 sm:px-6 lg:px-8">
-      <pre className="mt-12 bg-cyan-50 p-8 font-medium text-cyan-800">
-        Lets Get Start Pricing Card Section !!!!
-      </pre>
-
-      <div className="mx-auto grid max-w-7x1 grid-cols-3 gap-8 py-24 px-4 sm:px-6 lg:px-8">
-        {pricingPlans.map((plan) => (
-          <div 
-            key={plan.title} 
-            className="border border-slate-200 bg-white p-8 shadow-lg ">
-            
-            
-            <img src={plan.logo} alt="logo" className="w-20 h-5"/>
-            <h3>{plan.title}</h3>
-            <p>TL {plan.price}</p>
-
-            </div>
-        ))}
+const PricingCard = ({ data }) => (
+  <div className="box-border flex flex-col items-start p-0 absolute w-300 h-536 border">
+    {data.suggest && (
+      <div
+        style={{ backgroundColor: "blue", color: "white", padding: "12px" }}
+        className="flex flex-col items-start"
+      >
+        Best Choice
       </div>
-
+    )}
+    <img className="w-76 h-5 flex-none order-none grow-0" src={data.logo} alt={data.title} />
+    <div className="px-6 py-4">
+      <div className="font-bold text-xl mb-2">{data.title}</div>
+      <p className="text-gray-700 text-base">Price: ${data.price}</p>
     </div>
-  );
-}
- 
+    <div className="px-6 py-4">
+      <ul>
+        {data.features.map((feature) => (
+          <li
+            key={feature.id}
+            className={`text-gray-700 mb-2 ${
+              feature.goodFeature ? "text-green-500" : "text-gray-500"
+            }`}
+          >
+            {!feature.goodFeature && (
+              <span className="text-gray-500">&#x2717; </span>
+            )}
+            {feature.goodFeature && (
+              <span className="text-green-500">&#x2713; </span>
+            )}
+            {feature.title}
+          </li>
+        ))}
+      </ul>
+    </div>
+    <div className="px-6 py-4 bg-gray-200">
+      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Sign Up
+      </button>
+    </div>
+  </div>
+);
+
+export default PricingCard;
