@@ -13,22 +13,22 @@ const data = [
       },
       {
         id: 2,
-        title: "Ücretsiz Bakıma",
+        title: "Ücretsiz Değişim",
         goodFeature: true
       },
       {
         id: 3,
-        title: "Ücretsiz Yedek Parça",
+        title: "Ek 1 Yıl Garanti",
         goodFeature: false
       },
       {
         id: 4,
-        title: "Ücretsiz Yedek Parça",
+        title: "Dahil Olmayan Özellik",
         goodFeature: false
       },
       {
         id: 5,
-        title: "Ücretsiz Yedek Parça",
+        title: "Dahil Olmayan Özellik",
         goodFeature: false
       }
     ]
@@ -47,17 +47,22 @@ const data = [
       },
       {
         id: 2,
-        title: "Ücretsiz Bakıma",
+        title: "Ücretsiz Değişim",
         goodFeature: true
       },
       {
         id: 3,
-        title: "Ücretsiz Yedek Parça",
+        title: "Ek 2 Yıl Garanti",
         goodFeature: true
       },
       {
         id: 4,
-        title: "Ücretsiz Yedek Parça",
+        title: "Özellik - 1",
+        goodFeature: true
+      },
+      {
+        id: 5,
+        title: "Özellik - 2",
         goodFeature: true
       }
     ]

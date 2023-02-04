@@ -224,7 +224,7 @@
   height: 80px;
 
   /* Inside auto layout */
-
+  flex-shrink: 0;
   flex: none;
   order: 2;
   align-self: stretch;

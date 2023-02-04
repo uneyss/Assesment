@@ -1,5 +1,7 @@
 import React from "react";
-import CheckMark from "./checkmark.svg";
+import CheckMark from "../../svg/checkmark.svg";
+import CheckMarkNegative from "../../svg/checkmark-negative.svg"
+
 
 
 const PricingCard = ({ data }) => (
@@ -15,6 +17,7 @@ const PricingCard = ({ data }) => (
     <header className="layout">
       <img
         className="logo"
+        alt="logo"
         src={data.logo}
       />
 
@@ -32,10 +35,11 @@ const PricingCard = ({ data }) => (
             }`}
           >
             {!feature.goodFeature && (
-              <img src={CheckMark} alt="checkmark" className="mr-2 inline  " />
+
+              <img src={CheckMarkNegative} alt="checkmark-negative" className="mr-2 inline " />
             )}
             {feature.goodFeature && (
-              <img src={CheckMark} alt="checkmark" className="mr-2 inline " />
+              <img src={CheckMark} alt="checkmark" className="mr-2 inline  " />
             )}
             {feature.title}
           </li>

@@ -6,7 +6,7 @@ import data from './data';
 function App() {
   return (
     <div className="mt-10 ml-10">
-      <PricingCard data={data[2]} />
+      <PricingCard data={data[0]} />
     </div>
   );
 }
