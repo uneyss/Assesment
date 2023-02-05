@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import CheckMark from "../../svg/checkmark.svg";
 import CheckMarkNegative from "../../svg/checkmark-negative.svg";
+import Modal from "../Modal/Modal"
 
 const PricingCard = ({ data }) => (
   <div className="m-8  box-border flex flex-col items-start p-0 absoulte">
