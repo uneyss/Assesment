@@ -5,7 +5,7 @@ import data from "./data";
 
 function App() {
   return (
-    <div className="flex flex-wrap relative">
+    <div className="flex flex-wrap relative ">
 
         <PricingCard data={data[0]} id={data[0].id} />
         <PricingCard data={data[1]} id={data[1].id}/>

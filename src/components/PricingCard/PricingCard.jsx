@@ -5,7 +5,7 @@ import Modal from "../Modal/Modal";
 
 const PricingCard = ({ data, id }) => {
   const [modalOpen, setModalOpen] = useState(false);
-  const [theme, setTheme] = useState('light');
+
 
   const openModal = () => {
     setModalOpen(true);
@@ -19,11 +19,11 @@ const PricingCard = ({ data, id }) => {
 
   return (
     <>
-      <div className="m-8  box-border flex flex-col items-start p-0 absoulte">
+      <div className="m-8  box-border flex flex-col items-start p-0 absoulte ">
         <>
           <>
             {data.suggest && (
-              <div  className="box-border flex flex-row relative justify-center items-start p-3 gap-2 w-[23.75rem] h-[3rem] bg-[#0049E6] flex-none order- self-stretch grow-0 rounded-t-lg ">
+              <div  className="box-border flex flex-row relative justify-center items-start p-3 gap-2 w-[23.75rem] h-[3rem] bg-[#0049E6] flex-none order-0 self-stretch grow-0 rounded-t-lg ">
                 <h1 className="w-[3.75rem] h-[1.5rem] font-roboto not-italic font-medium text-base text-[#FFFFFF] flex-none order-none grow-0">
                   Önerilen
                 </h1>
