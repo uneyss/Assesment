@@ -7,9 +7,9 @@ function App() {
   return (
     <div className="flex flex-wrap relative">
 
-        <PricingCard data={data[0]} />
-        <PricingCard data={data[1]} />
-        <PricingCard data={data[2]} />
+        <PricingCard data={data[0]} id={data[0].id} />
+        <PricingCard data={data[1]} id={data[1].id}/>
+        <PricingCard data={data[2]} id={data[2].id}/>
       </div>
 
   );
