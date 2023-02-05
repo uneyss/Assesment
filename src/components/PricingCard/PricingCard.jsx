@@ -3,11 +3,11 @@ import CheckMark from "../../svg/checkmark.svg";
 import CheckMarkNegative from "../../svg/checkmark-negative.svg";
 
 const PricingCard = ({ data }) => (
-  <div>
+  <div className="m-8  box-border flex flex-col items-start p-0 absoulte">
     <>
       <>
         {data.suggest && (
-          <div className="flex flex-row relative justify-center items-start p-3 gap-2 w-[23.75rem] h-[3rem] bg-[#0049E6] flex-none order- self-stretch grow-0 rounded-t-lg">
+          <div className="box-border flex flex-row relative justify-center items-start p-3 gap-2 w-[23.75rem] h-[3rem] bg-[#0049E6] flex-none order- self-stretch grow-0 rounded-t-lg ">
             <h1 className="w-[3.75rem] h-[1.5rem] font-roboto not-italic font-medium text-base text-[#FFFFFF] flex-none order-none grow-0">
               Önerilen
             </h1>
@@ -15,7 +15,7 @@ const PricingCard = ({ data }) => (
         )}
       </>
 
-      <div className="box-border flex flex-col items-start p-0 relative w-[23.75rem] h-[33.5rem] top-0 bg[#FFFFFF] gray-200 flex-none order-none self-stretch grow-0 ">
+      <div className="box-border flex flex-col items-start p-0 relative w-[23.75rem] h-[33.5rem] top-0 bg[#FFFFFF]  gray-200 flex-none order-none self-stretch grow-0 ">
         <header className="flex flex-col items-start pt-8 pb-0 px-8 gap-4 w-[23.75rem] h-[10.125rem] flex-none order-none self-stretch grow-0">
           <img
             className="w-[4.75rem] h-[1.32rem] flex-none order-none grow-0"
