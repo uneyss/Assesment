@@ -3,6 +3,12 @@ import CheckMark from "../../svg/checkmark.svg";
 import CheckMarkNegative from "../../svg/checkmark-negative.svg";
 import Modal from "../Modal/Modal";
 
+    {/* 
+        Bu kısımda Modal Screen'nin açılıp kapanmasını sağlayan kodlar yazıyor.
+        En alt kısımda butona onClick olduğunda aktif oluyor ya da kapanıyor(Uygulamaya Dön - Planı Seç).
+    */}
+
+    
 const PricingCard = ({ data, id }) => {
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -18,10 +24,12 @@ const PricingCard = ({ data, id }) => {
 
 
   return (
+    
     <>
       <div className="m-8  box-border flex flex-col items-start p-0 absoulte ">
         <>
           <>
+                  {/* Card Componentin'deki Önerilen Kısım */}
             {data.suggest && (
               <div  className="box-border flex flex-row relative justify-center items-start p-3 gap-2 w-[23.75rem] h-[3rem] bg-[#0049E6] flex-none order-0 self-stretch grow-0 rounded-t-lg ">
                 <h1 className="w-[3.75rem] h-[1.5rem] font-roboto not-italic font-medium text-base text-[#FFFFFF] flex-none order-none grow-0">
@@ -30,8 +38,10 @@ const PricingCard = ({ data, id }) => {
               </div>
             )}
           </>
-
+              {/* Card */}
           <div className="box-border flex flex-col items-start p-0 relative w-[23.75rem] h-[33.5rem] top-0 bg[#FFFFFF]  gray-200 flex-none order-none self-stretch grow-0 ">
+            
+            {/* header */}
             <header className="flex flex-col items-start pt-8 pb-0 px-8 gap-4 w-[23.75rem] h-[10.125rem] flex-none order-none self-stretch grow-0">
               <img
                 className="w-[4.75rem] h-[1.32rem] flex-none order-none grow-0"
@@ -50,6 +60,8 @@ const PricingCard = ({ data, id }) => {
                 </p>
               </div>
             </header>
+
+            {/* Main Content */}
             <main className="flex flex-col items-start  pt-6 px-8 pb-10 w-[23.75rem] h-[18rem] flex-none order-1 self-stretch grow-0">
               <hr className="w-[19.75rem] h-0 pb-4 borders flex-none order-0 self-stretch grow-0" />
               <div className="flex flex-col items-start p-0 gap-4 w-[19.75rem] h-[11.5rem] flex-none order-1 self-stretch grow-0">
@@ -80,6 +92,8 @@ const PricingCard = ({ data, id }) => {
               </div>
             </main>
 
+            {/* Footer */}
+
             <footer className="flex flex-col items-start pt-0 px-8 pb-8 gap-6 w-[23.75rem] h-[5rem] flex-none order-2 self-stretch grow-0">
               <div className="flex flex-col items-start p-0 gap-3 w-[19.75rem] h-[3rem] flex-none order-none self-stretch grow-0">
                 <button onClick={openModal} className="flex flex-row justify-center items-center py-3 px-5 gap-2 w-[19.75rem] h-[3rem] bg-[#0049E6] shadow-sm rounded-lg flex-none order-none self-stretch grow-0">
@@ -89,6 +103,7 @@ const PricingCard = ({ data, id }) => {
                 </button>
               </div>
             </footer>
+
           </div>
         </>
       </div>

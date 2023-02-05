@@ -16,12 +16,4 @@
   border-radius: 8px;
 }
 
-@media screen and (min-width: 375px) {
-  .response {
-    background-color: aqua;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-}
 
