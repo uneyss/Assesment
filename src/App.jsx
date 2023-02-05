@@ -1,13 +1,17 @@
-import React from 'react';
+import React from "react";
 import "./index.css";
-import PricingCard from './components/PricingCard/PricingCard';
-import data from './data';
+import PricingCard from "./components/PricingCard/PricingCard";
+import data from "./data";
 
 function App() {
   return (
-    <div >
-      <PricingCard data={data[1]} />
-    </div>
+    <div className="flex flex-row absolute">
+
+        <PricingCard data={data[0]} />
+        <PricingCard data={data[1]} />
+        <PricingCard data={data[2]} />
+      </div>
+
   );
 }
 

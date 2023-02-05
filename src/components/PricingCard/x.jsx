@@ -8,7 +8,7 @@ const PricingCard = ({ data }) => (
   <div className="card gray">
     {data.suggest && (
       <div
-
+      
         className="suggest"
       >
         Best Choice
@@ -46,7 +46,7 @@ const PricingCard = ({ data }) => (
         ))}
       </ul>
     </main>
-
+    <div className="ml-20 mt-20 border-box flex flex-row items-start p-0 abolute w-[18.75rem] h-[32rem] bg-[#FFFFFF] rounded-lg borders">    </div>
     <footer className="footer">
       <div className="actions">
         <button className="button">
